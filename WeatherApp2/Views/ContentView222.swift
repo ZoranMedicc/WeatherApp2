@@ -4,7 +4,7 @@
 //
 //  Created by Zoran Medic on 07.01.2023..
 //
-
+/*
 import SwiftUI
 import CoreLocation
 import WeatherKit
@@ -48,7 +48,7 @@ struct HourlyForecastView: View {
                 HStack{
                     ForEach(hourWeatherList, id: \.date) { hourWeatherItem in
                         VStack(spacing: 20) {
-                            Text(hourWeatherItem.date.formatted(date: .omitted, time: .shortened))
+                            Text(hourWeatherItem.date.formatAsAbbreviatedTime())
                             Image(systemName: "\(hourWeatherItem.symbolName).fill")
                                 .foregroundColor(.yellow)
                             Text(hourWeatherItem.temperature.formatted())
@@ -161,3 +161,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+*/
